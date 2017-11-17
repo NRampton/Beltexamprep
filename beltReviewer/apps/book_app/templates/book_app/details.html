@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Books Home</title>
+    </head>
+    <body>
+        <div class="header">
+            <span>Welcome, {{ user.name }}!</span>
+            <h2>Recent Book Reviews:</h2>
+            <div>
+                {% for review in reviews %}
+                    {{review.users.name}}
+                {%endfor%}
+            </div>
+        </div>
+    </body>
+</html>
